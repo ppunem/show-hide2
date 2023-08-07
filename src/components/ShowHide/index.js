@@ -7,12 +7,18 @@ class ShowHide extends Component {
     displayFirstname=()=>{
         let display;
        if (clicked===false){
-           this.setState({clicked===true})
-           return display=<div className="first-last-name-card">Joe</div>
-          </div>
+           this.setState(=>({
+               return(
+                   {
+                       display=<div className="first-last-name-card">Joe</div>
+                       clicked=true
+                }
+               )
+           }))
        }
     }
 
+    
   render() {
     return (
       <div className="bg">
@@ -24,7 +30,7 @@ class ShowHide extends Component {
                 Show/Hide Firstname
               </button>
             </div>
-            {this.diaplay}
+            {this.displayFirstname()}
             
           <div className="first-last-name">
             <div className="btn-align">
