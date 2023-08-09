@@ -32,14 +32,14 @@ class ShowHide extends Component {
     if (firstClicked === true) {
       firstName = <div className="first-last-name-card">Joe</div>
     } else {
-      firstName = null
+      firstName = ''
     }
 
     let lastName
     if (lastClicked === true) {
       lastName = <div className="first-last-name-card">Jonas</div>
     } else {
-      lastName = null
+      lastName = ''
     }
 
     return (
