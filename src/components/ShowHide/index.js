@@ -32,15 +32,16 @@ class ShowHide extends Component {
     if (firstClicked === true) {
       firstName = <div className="first-last-name-card">Joe</div>
     } else {
-      firstName = <div className="first-last-name-card-null">Joe</div>
+      firstName = null
     }
 
     let lastName
     if (lastClicked === true) {
       lastName = <div className="first-last-name-card">Jonas</div>
     } else {
-      lastName = <div className="first-last-name-card-null">Joe</div>
+      lastName = null
     }
+
     return (
       <div className="bg">
         <h1 className="main-heading">Show/Hide</h1>
